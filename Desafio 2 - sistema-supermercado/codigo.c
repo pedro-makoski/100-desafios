@@ -282,4 +282,5 @@ void main()
         scanf("%c", &opcao);
     } while(opcao == 's' || opcao == 'S');
 
+    getche();
 }
