@@ -282,5 +282,6 @@ void main()
         scanf("%c", &opcao);
     } while(opcao == 's' || opcao == 'S');
 
+    printf("\nClique em qualquer tecla para sair");
     getche();
 }
