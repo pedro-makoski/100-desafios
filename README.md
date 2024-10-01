@@ -1,4 +1,4 @@
-# 100 desafios em c
+# 100 desafios em C
  Vou realizar cem exercícios em C, com o objetivo de praticar. O meu comprometimento é elaborar e codificar pelo menos 3 exercícios no mês, chegando a um ponto que tenhamos 100 exercícios. 
 ## Desafios 
 Veja aqui nessa tabela os desafios criados:
