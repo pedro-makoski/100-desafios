@@ -262,22 +262,28 @@ void main()
 
         if(oqueelequer == 1) {
             cadastrar_produto();
-        } else if(oqueelequer == 2) {
-            alterar_produto();
-        } else if(oqueelequer == 3) {
-            ver_produtos();
-            do {
-                printf("Qual voce que remover: ");
-                scanf("%d", &valor_remover);
-            } while(valor_remover < 0 || valor_remover > products_length);
-
-            remover_item(valor_remover-1);
-        } else if(oqueelequer == 4){
-            comprar();
         } else {
-            ver_produtos();
+            if(products_length > 0) {
+                if(oqueelequer == 2) {
+                    alterar_produto();
+                } else if(oqueelequer == 3) {
+                    ver_produtos();
+                    do {
+                        printf("Qual voce que remover: ");
+                        scanf("%d", &valor_remover);
+                    } while(valor_remover < 0 || valor_remover > products_length);
+
+                    remover_item(valor_remover-1);
+                } else if(oqueelequer == 4){
+                    comprar();
+                } else {
+                    ver_produtos();
+                }
+            } else {
+                printf("\nSem produtos nao tem como trabalhar com eles, cadastre um produto e tente novamente.");
+            }
         }
-        printf("Deseja fazer outra acao S/N: ");
+        printf("\nDeseja fazer outra acao S/N: ");
         fflush(stdin);
         scanf("%c", &opcao);
     } while(opcao == 's' || opcao == 'S');
