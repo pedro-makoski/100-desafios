@@ -7,4 +7,5 @@ Veja aqui nessa tabela os desafios criados:
 | 1 | padrao numeros primos | O objetivo é responder a pergunta, existe padrão entre os números primos, através da identificação dos números primos, e calculo da diferença entre um número primo e seu número primo antecessor. |
 | 2 | Sistema de super mercado | Sistema simples de supermercado |
 | 3 | Sistema para ver se um número é triangular. | Além de mostrar se o valor é considerado triangular, ele prova isso através de um triângulo formado na tela. |  
+| 4 | Fatorial | Sistema capaz de resolver o fatorial. | 
   
