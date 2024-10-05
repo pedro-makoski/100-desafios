@@ -8,4 +8,4 @@ Veja aqui nessa tabela os desafios criados:
 | 2 | Sistema de super mercado | Sistema simples de supermercado |
 | 3 | Sistema para ver se um número é triangular. | Além de mostrar se o valor é considerado triangular, ele prova isso através de um triângulo formado na tela. |  
 | 4 | Fatorial | Sistema capaz de resolver o fatorial. | 
-  
+| 5 | Pesquisa | Você pesquisa por um elemento, e caso parte esteja em um item da lista, aparecerá na tela. | 
