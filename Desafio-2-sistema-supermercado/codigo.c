@@ -7,6 +7,17 @@ float produto_preco_a_quant[MAX_PRODUCT] = {};
 int produto_quant_stock[MAX_PRODUCT] = {};
 int produto_type[MAX_PRODUCT] = {}; // 0 e a quilo e 1 e a unidade
 
+int strlength(char valor[100]) {
+    int total;
+    total = 0;
+
+    while(valor[total] != '\0') {
+        total++;
+    }
+
+    return total;
+}
+
 void cadastrar_produto()
 {
     if(products_length >= MAX_PRODUCT) {
@@ -21,7 +32,7 @@ void cadastrar_produto()
     printf("\nInforme o nome: ");
     fflush(stdin);
     gets(nome);
-    for(int i = 0; i <= sizeof nome; i++) {
+    for(int i = 0; i < strlength(nome); i++) {
         produto[products_length][i] = nome[i];
     }
 
@@ -111,7 +122,7 @@ void alterar_produto() {
             printf("\nInforme o nome: ");
             fflush(stdin);
             gets(nome);
-            for(int i = 0; i <= sizeof nome; i++) {
+            for(int i = 0; i < strlength(nome); i++) {
                 produto[valor_que_deseja_alterar][i] = nome[i];
             }
         }
@@ -176,7 +187,7 @@ void alterar_produto() {
 void remover_item(int pos) //pos comeca em 0
 {
     for(int i = pos+1; i < products_length; i++) {
-        for(int j = 0; j <= sizeof produto[i-1]; j++) {
+        for(int j = 0; j < strlength(produto[i-1]); j++) {
             produto[i-1][j] = produto[i][j];
         }
 
@@ -185,7 +196,7 @@ void remover_item(int pos) //pos comeca em 0
         produto_type[i-1] = produto_type[i];
     }
 
-    for(int i = 0; i <= sizeof produto[products_length-1]; i++){
+    for(int i = 0; i <= strlength(produto[products_length-1]); i++){
         produto[products_length-1][i] = 0;
     }
 
@@ -207,7 +218,7 @@ void comprar() {
             ver_produtos();
             printf("\nO que deseja comprar: ");
             scanf("%d", &oquecomprar);
-        } while(oquecomprar < 0 || oquecomprar > products_length);
+        } while(oquecomprar < 1 || oquecomprar > products_length);
         if(produto_quant_stock[oquecomprar-1] != 0) {
                 if(produto_type[oquecomprar-1] == 1) {
                     printf("Quantos kilos: ");
@@ -257,6 +268,7 @@ void main()
         printf("\n------------------------------");
         do{
             printf("\nO que fazer:\n(1) - Cadastrar produto\n(2) - Alterar produto\n(3) - Remover produto\n(4) - Comprar\n(5) - Mostrar produtos\nDiga: ");
+            fflush(stdin);
             scanf("%d", &oqueelequer);
         } while(oqueelequer < 1 || oqueelequer > 5);
 
