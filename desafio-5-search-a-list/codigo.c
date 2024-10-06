@@ -5,13 +5,24 @@ char itens[MAX_VALUE][100];
 int itens_length;
 itens_length = 0;
 
+int strlength(char valor[100]) {
+    int total;
+    total = 0;
+
+    while(valor[total] != '\0') {
+        total++;
+    }
+
+    return total;
+}
+
 void adicionar_lista(char value[100]) {
     if(itens_length == 100) {
         printf("\nNao e possivel prencher mais");
         return;
     }
 
-    for(int i = 0; i <= sizeof value; i++) {
+    for(int i = 0; i <= strlength(value); i++) {
         itens[itens_length][i] = value[i];
     }
 
@@ -31,26 +42,15 @@ void mostrar_valores() {
     printf("----Nao ha valores aqui, tente adicionar----\n");
 }
 
-int strlength(char valor[100]) {
-    int total;
-    total = 0;
-
-    while(valor[total] != '\0') {
-        total++;
-    }
-
-    return total;
-}
-
 void search(char search_term[100]) {
     int length_correct, quant_apareceram;
     quant_apareceram = 0;
 
     for(int i = 0; i < itens_length; i++) {
-        for(int j = 0; j <= strlength(itens[i]); j++) {
+        for(int j = 0; j < strlength(itens[i]); j++) {
             length_correct = 0;
 
-            for(int k = 0; k <= strlength(search_term); k++) {
+            for(int k = 0; k < strlength(search_term); k++) {
                 if(toupper(search_term[k]) == toupper(itens[i][j+k])) {
                     length_correct++;
                 }
