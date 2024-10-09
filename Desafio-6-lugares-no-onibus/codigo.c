@@ -100,9 +100,7 @@ void main()
                 quantidade(1, 0);
                 break;
             case 6:
-                printf("\nClique em qualquer lugar para sair");
                 return;
-
         }
     }
 }
