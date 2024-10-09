@@ -63,9 +63,7 @@ void quantidade(int show_progress, int show_result) {// show_progress 0 nao most
         }
     }
 
-    if(total_ocupados == 0) {
-        printf("Nao ha nada a ver aqui\n");
-    } else if(total_livres == 0) {
+    if(total_ocupados == 0 || total_livres == 0) {
         printf("Nao ha nada a ver aqui\n");
     }
 
