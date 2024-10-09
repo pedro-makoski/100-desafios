@@ -21,18 +21,19 @@ void mostrar_lugares(){
 }
 
 void reservar() {
-    int lugar;
+    int lugar, mais_de_uma_vez;
     lugar = 0;
     printf("\n--------------------------------------------");
     mostrar_lugares();
     printf("42 - Nao desejo mais reservar\n");
     do{
-        if(lugares[lugar] == 1) {
+        if(lugares[lugar] == 1 && mais_de_uma_vez >= 1) {
             printf("\nLugar ja reservado\n");
         }
 
         printf("Escolha o lugar: ");
         scanf("%d", &lugar);
+        mais_de_uma_vez++;
     } while(lugar > 42 || lugar < 0 || lugares[lugar] == 1);
     if(lugar == 42) {
         return;
