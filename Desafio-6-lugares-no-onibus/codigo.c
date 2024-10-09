@@ -76,6 +76,7 @@ void quantidade(int show_progress, int show_result) {// show_progress 0 nao most
 void main()
 {
     int escolha;
+    todos_igual_a_0();
     while(1) {
         do{
             printf("\n------------------------\n(1) - Reservar\n(2) - Ver lugares\n(3) - Quantidade de lugares ocupados e livres\n(4) - Lugares Ocupados\n(5) - Lugares Livres\n(6) - Sair\nEscolha um: ");
