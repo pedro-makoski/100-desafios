@@ -23,6 +23,7 @@ void mostrar_lugares(){
 void reservar() {
     int lugar, mais_de_uma_vez;
     lugar = 0;
+    mais_de_uma_vez = 0;
     printf("\n--------------------------------------------");
     mostrar_lugares();
     printf("42 - Nao desejo mais reservar\n");
