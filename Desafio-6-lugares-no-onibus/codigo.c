@@ -82,19 +82,26 @@ void main()
             scanf("%d", &escolha);
         } while(escolha < 1 || escolha > 6);
 
-        if(escolha == 1){
-            reservar();
-        }else if(escolha == 2){
-            mostrar_lugares();
-        }else if(escolha == 3){
-            quantidade(0, 1);
-        }else if(escolha == 4){
-            quantidade(2, 0);
-        }else if(escolha == 5) {
-            quantidade(1, 0);
-        }else if(escolha == 6) {
-            printf("\nClique em qualquer lugar para sair");
-            return;
+        switch(escolha) {
+            case 1:
+                reservar();
+                break;
+            case 2:
+                mostrar_lugares();
+                break;
+            case 3:
+                quantidade(0, 1);
+                break;
+            case 4:
+                quantidade(2, 0);
+                break;
+            case 5:
+                quantidade(1, 0);
+                break;
+            case 6:
+                printf("\nClique em qualquer lugar para sair");
+                return;
+
         }
     }
 }
