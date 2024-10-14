@@ -24,7 +24,7 @@ void reservar() {
     int lugar, mais_de_uma_vez;
     lugar = 0;
     mais_de_uma_vez = 0;
-    printf("\n--------------------------------------------");
+    printf("\n--------------------------------------------\n");
     mostrar_lugares();
     printf("42 - Nao desejo mais reservar\n");
     do{
@@ -75,11 +75,14 @@ void quantidade(int show_progress, int show_result) {// show_progress 0 nao most
 
 void main()
 {
+    char opcao;
     int escolha;
     todos_igual_a_0();
-    while(1) {
+    do {
+        system("CLS");
+
         do{
-            printf("\n------------------------\n(1) - Reservar\n(2) - Ver lugares\n(3) - Quantidade de lugares ocupados e livres\n(4) - Lugares Ocupados\n(5) - Lugares Livres\n(6) - Sair\nEscolha um: ");
+            printf("\n------------------------\n(1) - Reservar\n(2) - Ver lugares\n(3) - Quantidade de lugares ocupados e livres\n(4) - Lugares Ocupados\n(5) - Lugares Livres\n(6) - Esvaziar onibus\n(7) - Sair\nEscolha um: ");
             scanf("%d", &escolha);
         } while(escolha < 1 || escolha > 6);
 
@@ -100,7 +103,17 @@ void main()
                 quantidade(1, 0);
                 break;
             case 6:
+                todos_igual_a_0();
+                break;
+            case 7:
                 return;
         }
-    }
+
+        printf("\nDeseja Continuar S/N: ");
+        fflush(stdin);
+        scanf("%c", &opcao);
+    } while(opcao == 'S' || opcao == 's');
+
+    return;
+    getche();
 }
