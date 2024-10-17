@@ -10,3 +10,4 @@ Veja aqui nessa tabela os desafios criados:
 | 4 | Fatorial | Sistema capaz de resolver o fatorial. | 
 | 5 | Pesquisa | Você pesquisa por um elemento, e caso parte esteja em um item da lista, aparecerá na tela. | 
 | 6 | Reserva no onibus | Programa para reservar um lugar no onibus, caso o lugar esteja livre, além disso ele pode mostrar os lugares do ônibus, podendo mostrar apenas os reservados ou apenas os livre, e também a quantidade de livres e ocupados. | 
+| 7 | Conversão Numerica | Conversão numerica de valores com duas bases difentes |
