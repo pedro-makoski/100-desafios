@@ -61,8 +61,13 @@ int string_para_valor(char valor[TAMANHO_MAXIMO_DO_NUMERO]) {
     return res;
 }
 
-void decimal_para_any(int base_atual, int base_a_converter, char valor[TAMANHO_MAXIMO_DO_NUMERO]) {
-    int divisao = string_para_valor(valor), resto, i = 0, valores_binarios[TAMANHO_MAXIMO_DO_NUMERO];
+char* decimal_para_any(int base_a_converter, int valor) {
+    int divisao = valor, resto, i = 0, valores_binarios[TAMANHO_MAXIMO_DO_NUMERO], length;
+    char* res = (char*)calloc(QUANTIDADE_ALGARISMOS,sizeof(char));
+
+    if(res == NULL) {
+        printf("Ops, aconteceu um erro, tente novamente mais tarde");
+    }
 
     while(divisao >= base_a_converter) {
         resto = divisao%base_a_converter;
@@ -74,12 +79,16 @@ void decimal_para_any(int base_atual, int base_a_converter, char valor[TAMANHO_M
 
     valores_binarios[i] = divisao;
 
-    for(i = i; i >= 0; i--) {
-        printf("%c", algarismos_possiveis[valores_binarios[i]]);
+    length = i;
+    for(i = length; i >= 0; i--) {
+        res[length-i] = algarismos_possiveis[valores_binarios[i]];
     }
+
+    res[length+1] = '\0';
+    return res;
 }
 
-void any_para_decimal(int base_atual, int base_a_converter, char valor[TAMANHO_MAXIMO_DO_NUMERO]) {
+int any_para_decimal(int base_atual, char valor[TAMANHO_MAXIMO_DO_NUMERO]) {
     int length = lengthstr(valor), res = 0, potencia = length-1, valor_atual;
 
     for(int i = 0; i < length; i++) {
@@ -88,53 +97,52 @@ void any_para_decimal(int base_atual, int base_a_converter, char valor[TAMANHO_M
         potencia--;
     }
 
-    printf("%d", res);
-}
-
-void binario_para_any_exceto_decimal(int base_atual, int base_a_converter, char valor[TAMANHO_MAXIMO_DO_NUMERO]) {
-    return;
-}
-
-void any_menos_decimal_exceto_binario(int base_atual, int base_a_converter, char valor[TAMANHO_MAXIMO_DO_NUMERO]) {
-    return;
+    return res;
 }
 
 void main() {
-    int base_atual, base_a_converter, res_inicial;
-    char valor[TAMANHO_MAXIMO_DO_NUMERO];
-    bool compativel = true;
+    int base_atual, base_a_converter, res_int, valor_int;
+    char valor[TAMANHO_MAXIMO_DO_NUMERO], res[TAMANHO_MAXIMO_DO_NUMERO], opcao;
+    bool notcompativel;
 
     do {
-        printf("Qual e a base do valor, que voce vai digitar\n(2) - Binario\n(8) - Octal\n(10) - Decimal\n(16) - Hexadecimal\nDiga: ");
-        scanf("%d", &base_atual);
-        printf("Qual e a base do valor, que voce quer obter\n(2) - Binario\n(8) - Octal\n(10) - Decimal\n(16) - Hexadecimal\nDiga: ");
-        scanf("%d", &base_a_converter);
-    } while(base_a_converter > 36 || base_atual > 36);
+        system("CLS");
+        notcompativel = false;
 
-    do {
-        printf("Qual e o valor atual: ");
+        do {
+            printf("Qual e a base do valor, que voce vai digitar\n(2) - Binario\n(8) - Octal\n(10) - Decimal\n(16) - Hexadecimal\nDiga: ");
+            scanf("%d", &base_atual);
+            printf("Qual e a base do valor, que voce quer obter\n(2) - Binario\n(8) - Octal\n(10) - Decimal\n(16) - Hexadecimal\nDiga: ");
+            scanf("%d", &base_a_converter);
+        } while(base_a_converter > 36 || base_atual > 36);
+
+        do {
+            printf("Qual e o valor atual: ");
+            if(base_atual == 10) {
+                scanf("%d", &valor_int);
+                notcompativel = false;
+            } else{
+                fflush(stdin);
+                gets(valor);
+                notcompativel = !iscompativel(valor, base_atual);
+            }
+        } while(notcompativel);
+
+        if(base_atual == 10) {
+            strcpy(res, decimal_para_any(base_a_converter, valor_int));
+            printf("%s", res);
+        } else if(base_a_converter == 10) {
+            res_int = any_para_decimal(base_atual, valor);
+            printf("%d", res_int);
+        } else {
+            res_int = any_para_decimal(base_atual, valor);
+            strcpy(res, decimal_para_any(base_a_converter, res_int));
+            printf("%s", res);
+        }
+
+        printf("\nDeseja continuar S/N: ");
         fflush(stdin);
-        gets(valor);
-
-        compativel = !iscompativel(valor, base_atual);
-    } while(compativel);
-
-
-    switch(base_atual) {
-        case 10:
-            decimal_para_any(base_atual, base_a_converter, valor);
-            return;
-        case 2:
-            binario_para_any_exceto_decimal(base_atual, base_a_converter, valor);
-            return;
-    }
-
-    switch(base_a_converter) {
-        case 10:
-            any_para_decimal(base_atual, base_a_converter, valor);
-            return;
-        case 2:
-            any_menos_decimal_exceto_binario(base_atual, base_a_converter, valor);
-            return;
-    }
+        scanf("%c", &opcao);
+    } while(opcao == 's' || opcao == 'S');
 }
+
