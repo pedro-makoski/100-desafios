@@ -11,3 +11,4 @@ Veja aqui nessa tabela os desafios criados:
 | 5 | Pesquisa | Você pesquisa por um elemento, e caso parte esteja em um item da lista, aparecerá na tela. | 
 | 6 | Reserva no onibus | Programa para reservar um lugar no onibus, caso o lugar esteja livre, além disso ele pode mostrar os lugares do ônibus, podendo mostrar apenas os reservados ou apenas os livre, e também a quantidade de livres e ocupados. | 
 | 7 | Conversão Numerica | Conversão numerica de valores com duas bases difentes |
+| 8 | Valores ordenados | Transformar vetor deordenado em ordenado. |
