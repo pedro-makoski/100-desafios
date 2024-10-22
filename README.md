@@ -14,3 +14,4 @@ Veja aqui nessa tabela os desafios criados:
 | 8 | Valores ordenados | Transformar vetor deordenado em ordenado. |
 | 9 | Juros Simples e Compostos | Calculadora de Juros Simples e Compostos a partir do periodo, taxa de Juros e capital inícial |
 | 10 | Inteiro para string | Pode parecer inutil nesse contexto, e é mesmo, mas para esse contexto, apenas. O programa transforma um número inteiro em uma string |
+| 11 | Float para string | Pode parecer inutil nesse contexto, e é mesmo, mas para esse contexto, apenas. O programa transforma um número real em uma string |
