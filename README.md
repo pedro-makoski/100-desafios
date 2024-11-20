@@ -17,3 +17,4 @@ Veja aqui nessa tabela os desafios criados:
 | 11 | Float para string | Pode parecer inutil nesse contexto, e é mesmo, mas para esse contexto, apenas. O programa transforma um número real em uma string |
 | 12 | Sequência da Fibonacci | Programa para realizar a sequencia de fibonacci. O programa mostra quantos numeros o usuário quiser de valores gerados, exceto quando ultrapassa o limite possível, por causa do C. |
 | 13 | Color Changer | Desafio em que é feito uma mundança de cores de forma repentina. Usando o system color. |
+| 14 | Operacao Calc | Se calcula o resultado a partir de dois valores, e um sinal. | 
