@@ -1,7 +1,6 @@
 #include "stdio.h"
 #include "math.h"
 #include "funcoes.h"
-#include ""
 
 float calcDelta(float a, float b, float c) {
     float res = (b*b)-(4*a*c);
