@@ -60,18 +60,19 @@ int main()
 
         if(a == 0) {
             printf("Desculpe isso nao eh uma funcao quadratica");
+        } else {
+            do {
+                do {
+                    mostrarOpcoes(&opcao);
+                } while(opcao > 5 || opcao < 1);
+                caseWitch(opcao, a, b, c);
+
+                printf("\nDeseja fazer outra operacao com seu a, b e c S/N: ");
+                fflush(stdin);
+                scanf("%c", &otherOption);
+            } while(otherOption == 'S' || otherOption == 's');
         }
 
-        do {
-            do {
-                mostrarOpcoes(&opcao);
-            } while(opcao > 5 || opcao < 1);
-            caseWitch(opcao, a, b, c);
-
-            printf("\nDeseja fazer outra operacao com seu a, b e c S/N: ");
-            fflush(stdin);
-            scanf("%c", &otherOption);
-        } while(otherOption == 'S' || otherOption == 's');
 
         printf("\nDeseja continuar com outros valores S/N: ");
         fflush(stdin);
