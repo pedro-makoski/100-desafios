@@ -22,4 +22,5 @@ Veja aqui nessa tabela os desafios criados:
 | 16 | Time Converter | Diga o tempo em segundos, e obtenha a conversão em dias:horas:minutos:segundos. |
 | 17 | Time Converter v2 | Uma versão melhorada da anterior, onde você pode colocar o input em várias unidades diferentes e o retorno será de dias:horas:minutos:segundos. |
 | 18 | Recursividade Test | O objetivo, por mais de ser simples, é criar uma repetição de um texto usando recursividade. |
-| 19 | Inverter uma String | O objetivo é criar um programa que inverta a string |
+| 19 | Inverter uma String | O objetivo é criar um programa que inverta uma string |
+| 20 | Maior Numero de Uma lista | O objetivo é criar um programa que encontre o maior e o menor valor de uma lista. | 
