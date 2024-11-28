@@ -20,4 +20,5 @@ Veja aqui nessa tabela os desafios criados:
 | 14 | Operacao Calc | Se calcula o resultado a partir de dois valores, e um sinal. | 
 | 15 | Funções quadráticas | Pacote de funções sobre cálculo de funções quadráticas. |  
 | 16 | Time Converter | Diga o tempo em segundos, e obtenha a conversão em dias:horas:minutos:segundos. |
-| 17 | Time Converter v2 | Uma versão melhorada da anterior, onde você pode colocar o input em várias unidades diferentes e o retorno será de dias:horas:minutos:segundos.
+| 17 | Time Converter v2 | Uma versão melhorada da anterior, onde você pode colocar o input em várias unidades diferentes e o retorno será de dias:horas:minutos:segundos. |
+| 18 | Recursividade Test | O objetivo, por mais de ser simples, é criar uma repetição de um texto usando recursividade. |
