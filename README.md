@@ -24,3 +24,4 @@ Veja aqui nessa tabela os desafios criados:
 | 18 | Recursividade Test | O objetivo, por mais de ser simples, é criar uma repetição de um texto usando recursividade. |
 | 19 | Inverter uma String | O objetivo é criar um programa que inverta uma string |
 | 20 | Maior Numero de Uma lista | O objetivo é criar um programa que encontre o maior e o menor valor de uma lista. | 
+| 21 | Time converter v1.5 | Simples: O objetivo é criar um conversor de tempo com uma outra lógica |
