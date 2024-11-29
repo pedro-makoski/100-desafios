@@ -10,7 +10,7 @@ float pedirValueFloat(char* msg) {
 void calcTempo(float secondsTotais, float *horas, float *minutos, float *segundos, float *dias)
 {
     int resto;
-    *dias = secondsTotais/86400;
+    *dias = (int)secondsTotais/86400;
     resto = (int)secondsTotais%86400;
     *horas = resto/3600;
     resto = resto%3600;
