@@ -71,7 +71,7 @@ float calcFX(float a, float b, float c, float x) {
     return res;
 }
 
-float calcFxMultiple(float a, float b, float c, int quant, int start) {
+void calcFxMultiple(float a, float b, float c, int quant, int start) {
     float valueY;
 
     printf("\n|x\t|\ty\t\t|");
