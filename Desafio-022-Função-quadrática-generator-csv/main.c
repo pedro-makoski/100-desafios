@@ -1,5 +1,6 @@
 #include "stdio.h"
 #include "math.h"
+#include "locale.h"
 
 float pedirValueFloat(char* msg) {
     float valor;
@@ -23,10 +24,11 @@ float calcFX(float a, float b, float c, float x) {
 void calcFxMultipleFile(float a, float b, float c, int quant, int start, FILE *file, float steps) {
     float valueY;
     float i;
+    setlocale(LC_ALL, "Portuguese");
 
     for(i = (float)start; i <= (float)quant; i+=steps) {
         valueY = calcFX(a, b, c, i);
-        fprintf(file, "%.2f,%.2f\n", i, valueY);
+        fprintf(file, "%.2f;%.2f\n", i, valueY);
     }
 }
 
