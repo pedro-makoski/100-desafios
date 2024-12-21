@@ -10,7 +10,7 @@ int pedirValor(char *msg) {
 
 void main()
 {
-    float valorProcurado;
+    int valorProcurado;
     valorProcurado = pedirValor("Informe um valor para ver se ele aparece: ");
 
     FILE *dados;
