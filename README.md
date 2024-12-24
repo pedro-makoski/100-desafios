@@ -29,3 +29,4 @@ Veja aqui nessa tabela os desafios criados:
 | 23 | Arquivar dados da tabela | O objetivo é usar leitura de linhas e colunas para escanear todos os valores, e armazenar em uma matriz |
 | 24 | Procurar quantidade de certo elemento em uma linha | O objetivo é criaru um programa para Procurar quantidade de certo elemento em uma linha |
 | 25 | Procurar quantidade de vezes que mais de um elementos estão na lista | O objetivo é criar um programa para Procurar quantidade de vezes que mais de um elementos estão na lista |
+| 26 | Lucro | O objetivo é criar um programa em Go que calcule o lucro | 
