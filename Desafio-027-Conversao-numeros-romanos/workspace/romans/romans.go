@@ -41,22 +41,18 @@ func VerifyIsNotRoman(number []string) (bool, structs.Erro, string) {
 			repetidos[indexNow]++
 		} 
 
-		if repetidos[indexNow] > structs.RepetidosQuantPode[indexNow] && comparedValues[i]=='1' {
-			if i != 0 {
-				indexBefore := listSlices.FindIndex(structs.CharsRoman, number[i-1])
-				if comparedValues[i-1] == '0' {
-					valueNow := structs.RomansEquivalentNumber[indexNow]
-					valueBefore := structs.RomansEquivalentNumber[indexBefore]
-					
-					if !(valueNow/10==valueBefore || valueNow/5==valueBefore) {
-						return true, structs.Erro{IsError: true, Message: "O valor informado não é um número romano corretamente ordenado"}, ""	
-					}
-				} else {
-					return true, structs.Erro{IsError: true, Message: "O valor informado não é um número romano corretamente ordenado"}, ""
-				}	
-			} else {
-				return true, structs.Erro{IsError: true, Message: "O valor informado não é um número romano corretamente ordenado"}, ""
-			}
+		if i != 0 && comparedValues[i]=='1' {
+			indexBefore := listSlices.FindIndex(structs.CharsRoman, number[i-1])
+			if comparedValues[i-1] == '0' {
+				valueNow := structs.RomansEquivalentNumber[indexNow]
+				valueBefore := structs.RomansEquivalentNumber[indexBefore]
+				
+				if !(valueNow/10==valueBefore || valueNow/5==valueBefore) {
+					return true, structs.Erro{IsError: true, Message: "O valor informado não é um número romano corretamente ordenado"}, ""	
+				}
+			}	
+		} else if repetidos[indexNow] > structs.RepetidosQuantPode[indexNow] && comparedValues[i]=='1' {
+			return true, structs.Erro{IsError: true, Message: "O valor informado não é um número romano corretamente ordenado"}, ""
 		}
 
 		if comparedValues[i] == '0' && repetidosSubtraintes[indexNow] > structs.QuantAntecessor[indexNow] {
