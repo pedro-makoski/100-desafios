@@ -30,3 +30,4 @@ Veja aqui nessa tabela os desafios criados:
 | 24 | Procurar quantidade de certo elemento em uma linha | O objetivo é criaru um programa para Procurar quantidade de certo elemento em uma linha |
 | 25 | Procurar quantidade de vezes que mais de um elementos estão na lista | O objetivo é criar um programa para Procurar quantidade de vezes que mais de um elementos estão na lista |
 | 26 | Lucro | O objetivo é criar um programa em Go que calcule o lucro | 
+| 27 | Conversão romano | O objetivo é criar uma API Restful para conversão de números romanos. |
