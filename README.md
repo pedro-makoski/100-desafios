@@ -31,3 +31,4 @@ Veja aqui nessa tabela os desafios criados:
 | 25 | Procurar quantidade de vezes que mais de um elementos estão na lista | O objetivo é criar um programa para Procurar quantidade de vezes que mais de um elementos estão na lista |
 | 26 | Lucro | O objetivo é criar um programa em Go que calcule o lucro | 
 | 27 | Conversão romano | O objetivo é criar uma API Restful para conversão de números romanos. |
+| 28 | CSV em tabela | O objetivo é criar um programa que obtenha um valor em CSV, e transforme em uma tabela formatada no prompt de comando. Mas atenção: o  programa nao funciona com virgulas entre aspas e nem com acentos e cada coluna deve ter pelo menos um espaco, para que o programa funcione. | 
