@@ -11,7 +11,7 @@ func TestDecimalToRomanoCalc(t *testing.T) {
 		romanoWant := v.ValorRomano
 		romano := DecimalParaRomano(decimal).ValorRomano
 		if(romanoWant != romano) {
-			t.Fatalf("Error: o numero decimal %q não corresponde ao número romano %q pois o certo seria %q", decimal, romano, romanoWant)
+			t.Fatalf("Error: o numero decimal %#q não corresponde ao número romano %#q pois o certo seria %#q", decimal, romano, romanoWant)
 		}
 	}	
 }
