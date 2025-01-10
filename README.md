@@ -34,3 +34,4 @@ Veja aqui nessa tabela os desafios criados:
 | 28 | CSV em tabela | O objetivo é criar um programa que obtenha um valor em CSV, e transforme em uma tabela formatada no prompt de comando. Mas atenção: o  programa nao funciona com virgulas entre aspas e nem com acentos e cada coluna deve ter pelo menos um espaco, para que o programa funcione. | 
 | 29 | Conversão romano test | O objetivo é criar em Go, funções testes para ver se esta realmente correto. | 
 | 30 | Palíndromo verifier | O objetivo é criar um programa que peça ao usuário um valor e retorne se ele é ou não é um palíndromo | 
+| 31 | Contagem de caracteres | O objetivo é criar um programa que retorne um map com a quantidade de que cada caractere aparece em uma string | 
