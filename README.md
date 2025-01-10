@@ -35,3 +35,4 @@ Veja aqui nessa tabela os desafios criados:
 | 29 | Conversão romano test | O objetivo é criar em Go, funções testes para ver se esta realmente correto. | 
 | 30 | Palíndromo verifier | O objetivo é criar um programa que peça ao usuário um valor e retorne se ele é ou não é um palíndromo | 
 | 31 | Contagem de caracteres | O objetivo é criar um programa que retorne um map com a quantidade de que cada caractere aparece em uma string | 
+| 32 | Soma de valores pares igual a um valor determinado | O objetivo é criar um programa onde a soma de valores pares igual a um valor determinado 
