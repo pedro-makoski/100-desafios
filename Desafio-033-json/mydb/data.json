@@ -1,0 +1,320 @@
+[
+  {
+    "id": 1,
+    "name": "Banana",
+    "price": 5.12,
+    "quant-in-stock": 100
+  },
+  {
+    "id": 2,
+    "name": "Apple",
+    "price": 2.5,
+    "quant-in-stock": 150
+  },
+  {
+    "id": 3,
+    "name": "Orange",
+    "price": 3,
+    "quant-in-stock": 200
+  },
+  {
+    "id": 4,
+    "name": "Grapes",
+    "price": 6.99,
+    "quant-in-stock": 75
+  },
+  {
+    "id": 5,
+    "name": "Strawberries",
+    "price": 8.99,
+    "quant-in-stock": 50
+  },
+  {
+    "id": 6,
+    "name": "Blueberries",
+    "price": 9.99,
+    "quant-in-stock": 60
+  },
+  {
+    "id": 7,
+    "name": "Raspberries",
+    "price": 7.5,
+    "quant-in-stock": 40
+  },
+  {
+    "id": 8,
+    "name": "Pineapple",
+    "price": 4.99,
+    "quant-in-stock": 30
+  },
+  {
+    "id": 9,
+    "name": "Mango",
+    "price": 5.5,
+    "quant-in-stock": 45
+  },
+  {
+    "id": 10,
+    "name": "Watermelon",
+    "price": 7.99,
+    "quant-in-stock": 25
+  },
+  {
+    "id": 11,
+    "name": "Milk (1 Gallon)",
+    "price": 4.5,
+    "quant-in-stock": 80
+  },
+  {
+    "id": 12,
+    "name": "Eggs (1 Dozen)",
+    "price": 3.99,
+    "quant-in-stock": 120
+  },
+  {
+    "id": 13,
+    "name": "Bread (Loaf)",
+    "price": 2.99,
+    "quant-in-stock": 90
+  },
+  {
+    "id": 14,
+    "name": "Cheese (Cheddar)",
+    "price": 5.99,
+    "quant-in-stock": 70
+  },
+  {
+    "id": 15,
+    "name": "Yogurt",
+    "price": 1.5,
+    "quant-in-stock": 180
+  },
+  {
+    "id": 16,
+    "name": "Chicken Breast",
+    "price": 8.99,
+    "quant-in-stock": 65
+  },
+  {
+    "id": 17,
+    "name": "Ground Beef",
+    "price": 6.99,
+    "quant-in-stock": 75
+  },
+  {
+    "id": 18,
+    "name": "Salmon Fillet",
+    "price": 12.99,
+    "quant-in-stock": 40
+  },
+  {
+    "id": 19,
+    "name": "Rice (1 Bag)",
+    "price": 9.99,
+    "quant-in-stock": 55
+  },
+  {
+    "id": 20,
+    "name": "Pasta",
+    "price": 1.99,
+    "quant-in-stock": 110
+  },
+  {
+    "id": 21,
+    "name": "Tomatoes",
+    "price": 2.99,
+    "quant-in-stock": 85
+  },
+  {
+    "id": 22,
+    "name": "Potatoes",
+    "price": 3.5,
+    "quant-in-stock": 95
+  },
+  {
+    "id": 23,
+    "name": "Onions",
+    "price": 1.99,
+    "quant-in-stock": 105
+  },
+  {
+    "id": 24,
+    "name": "Carrots",
+    "price": 2.5,
+    "quant-in-stock": 115
+  },
+  {
+    "id": 25,
+    "name": "Broccoli",
+    "price": 3.99,
+    "quant-in-stock": 70
+  },
+  {
+    "id": 26,
+    "name": "Spinach",
+    "price": 4.5,
+    "quant-in-stock": 60
+  },
+  {
+    "id": 27,
+    "name": "Lettuce",
+    "price": 2.99,
+    "quant-in-stock": 80
+  },
+  {
+    "id": 28,
+    "name": "Cucumbers",
+    "price": 1.5,
+    "quant-in-stock": 90
+  },
+  {
+    "id": 29,
+    "name": "Bell Peppers",
+    "price": 3.5,
+    "quant-in-stock": 65
+  },
+  {
+    "id": 30,
+    "name": "Avocados",
+    "price": 2,
+    "quant-in-stock": 50
+  },
+  {
+    "id": 31,
+    "name": "Olive Oil",
+    "price": 7.99,
+    "quant-in-stock": 45
+  },
+  {
+    "id": 32,
+    "name": "Salt",
+    "price": 1.5,
+    "quant-in-stock": 120
+  },
+  {
+    "id": 33,
+    "name": "Pepper",
+    "price": 2,
+    "quant-in-stock": 110
+  },
+  {
+    "id": 34,
+    "name": "Sugar",
+    "price": 3.5,
+    "quant-in-stock": 85
+  },
+  {
+    "id": 35,
+    "name": "Flour",
+    "price": 4,
+    "quant-in-stock": 75
+  },
+  {
+    "id": 36,
+    "name": "Coffee",
+    "price": 9.99,
+    "quant-in-stock": 60
+  },
+  {
+    "id": 37,
+    "name": "Tea",
+    "price": 5.99,
+    "quant-in-stock": 70
+  },
+  {
+    "id": 38,
+    "name": "Cereal",
+    "price": 4.5,
+    "quant-in-stock": 80
+  },
+  {
+    "id": 39,
+    "name": "Oatmeal",
+    "price": 3.99,
+    "quant-in-stock": 90
+  },
+  {
+    "id": 40,
+    "name": "Peanut Butter",
+    "price": 4.99,
+    "quant-in-stock": 55
+  },
+  {
+    "id": 41,
+    "name": "Jelly",
+    "price": 3.5,
+    "quant-in-stock": 65
+  },
+  {
+    "id": 42,
+    "name": "Honey",
+    "price": 6.99,
+    "quant-in-stock": 40
+  },
+  {
+    "id": 43,
+    "name": "Ketchup",
+    "price": 2.99,
+    "quant-in-stock": 75
+  },
+  {
+    "id": 44,
+    "name": "Mustard",
+    "price": 2.5,
+    "quant-in-stock": 80
+  },
+  {
+    "id": 45,
+    "name": "Mayonnaise",
+    "price": 3.99,
+    "quant-in-stock": 70
+  },
+  {
+    "id": 46,
+    "name": "Soy Sauce",
+    "price": 4.5,
+    "quant-in-stock": 50
+  },
+  {
+    "id": 47,
+    "name": "Vinegar",
+    "price": 3,
+    "quant-in-stock": 60
+  },
+  {
+    "id": 48,
+    "name": "Hot Sauce",
+    "price": 4.99,
+    "quant-in-stock": 45
+  },
+  {
+    "id": 49,
+    "name": "Chocolate Bar",
+    "price": 1.99,
+    "quant-in-stock": 200
+  },
+  {
+    "id": 50,
+    "name": "Chips",
+    "price": 3.5,
+    "quant-in-stock": 150
+  },
+  {
+    "id": 51,
+    "name": "Soda",
+    "price": 1.5,
+    "quant-in-stock": 250
+  },
+  {
+    "id": 52,
+    "name": "Bottle",
+    "price": 50,
+    "quant-in-stock": 20
+  },
+  {
+    "id": 53,
+    "name": "Phone",
+    "price": 1000,
+    "quant-in-stock": 30
+  }
+]
