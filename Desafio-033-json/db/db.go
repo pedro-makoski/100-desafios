@@ -8,7 +8,7 @@ import (
 	"reflect"
 )
 
-func GetJsonStructure[T any](name string) ([]T, error){ 
+func GetJsonStructure[T any](name string) ([]T, error) {
 	file, err := os.ReadFile(name)
 	if err != nil {
 		fmt.Println(err)
@@ -31,14 +31,14 @@ func contains[T comparable](list []T, value T) bool {
 		}
 	}
 
-	return false 
+	return false
 }
 
-func thisItemAlreadExist[T any](object []T, element T, uniqueKeys []int) bool{
+func thisItemAlreadExist[T any](object []T, element T, uniqueKeys []int) bool {
 	for _, v := range object {
 		values := reflect.ValueOf(v)
 		valuesOfElement := reflect.ValueOf(element)
-		for i:=0; i < values.NumField(); i++ {
+		for i := 0; i < values.NumField(); i++ {
 			if contains(uniqueKeys, i) {
 				campo := values.Field(i).Interface()
 				campoNaoPodeSer := valuesOfElement.Field(i).Interface()
@@ -46,7 +46,7 @@ func thisItemAlreadExist[T any](object []T, element T, uniqueKeys []int) bool{
 				if campo == campoNaoPodeSer {
 					return true
 				}
-			}			
+			}
 		}
 	}
 
