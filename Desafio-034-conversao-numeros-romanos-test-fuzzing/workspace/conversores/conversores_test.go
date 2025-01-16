@@ -18,7 +18,7 @@ func FuzzConversao(f *testing.F) {
 		romanoNumber := romano.ValorRomano
 		decimalOfRoman, erro := RomanoParaDecimal(romanoNumber)
 		if erro.IsError {
-			return 
+			t.Skip()
 		} 
 
 		if decimalOfRoman.ValorDecimal != value {
