@@ -37,3 +37,4 @@ Veja aqui nessa tabela os desafios criados:
 | 31 | Contagem de caracteres | O objetivo é criar um programa que retorne um map com a quantidade de que cada caractere aparece em uma string | 
 | 32 | Soma de valores pares igual a um valor determinado | O objetivo é criar um programa onde a soma de valores pares igual a um valor determinado |
 | 33 | Post e Get Json | O objetivo é criar uma API Restful que faça POST e GET no JSON usando Go e Gin | 
+| 34 | Conversão romano test V2 | O objetivo é criar em Go, funções testes para ver se esta realmente correto. Só que agora usando teste fuzzing. |
