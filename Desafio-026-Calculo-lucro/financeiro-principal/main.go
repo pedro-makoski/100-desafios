@@ -3,7 +3,6 @@ package main
 import (
 	"financeiro/funcoes-calculo"
 	"fmt"
-	"log"
 )
 
 func inputFloat(message string) (float32){
@@ -15,9 +14,6 @@ func inputFloat(message string) (float32){
 }
 
 func main() {
-	log.SetPrefix("Error: ");
-	log.SetFlags(0)
-
 	var faturamento float32
 	var gasto float32
 	var lucroValue float32
@@ -28,11 +24,7 @@ func main() {
 	lucroValue = lucro.Lucrocalc(faturamento, gasto)
 	lucroString := fmt.Sprintf("O lucro foi de %.2f", lucroValue)
 	fmt.Println(lucroString)
-	status, err := lucro.Lucrocase(lucroValue);
-	
-	if err != nil {
-		log.Fatal(err)
-	}
+	status:= lucro.Lucrocase(lucroValue);
 
 	fmt.Println(status)
 }
