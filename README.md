@@ -1,5 +1,5 @@
 # 100 desafios
- Vou realizar cem exercícios em C e Go, com o objetivo de praticar. O meu comprometimento é elaborar e codificar pelo menos 3 exercícios no mês, chegando a um ponto que tenhamos 100 exercícios. 
+Vou realizar cem exercícios em C, Go ou JS, com o objetivo de praticar. O meu comprometimento é elaborar e codificar pelo menos 3 exercícios no mês, chegando a um ponto que tenhamos 100 exercícios. 
 ## Desafios 
 Veja aqui nessa tabela os desafios criados:
 | Numero | Nome | Descrição |
@@ -38,3 +38,4 @@ Veja aqui nessa tabela os desafios criados:
 | 32 | Soma de valores pares igual a um valor determinado | O objetivo é criar um programa onde a soma de valores pares igual a um valor determinado |
 | 33 | Post e Get Json | O objetivo é criar uma API Restful que faça POST e GET no JSON usando Go e Gin | 
 | 34 | Conversão romano test V2 | O objetivo é criar em Go, funções testes para ver se esta realmente correto. Só que agora usando teste fuzzing. |
+| 35 | Markdown em HTML | O desáfio é criar um programa que transforma arquivos markdown em HTML, usando JS. | 
