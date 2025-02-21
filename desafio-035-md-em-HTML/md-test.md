@@ -5,7 +5,7 @@
 ##### Olá
 ###### Olá
 Olá **Olá** **Olá** ***Olá*** *Olá*, *Olá**Olá**Olá*, **Olá*Olá*Olá** 
-Banana fdjdksjfdkjdslk **olá**, dksfldkçglbkdflçbkfsdçlkblçfdkblçdkvxb ,zsxvldbkbldksç bcl bclfçm abçdfkzgsl *olá*
+Banana fdjdksjfdkjdslk **olá**, dksfldkçglb `kdflçbkf` sdçlkblçfdkblçdkvxb ,zsxvldbkbldksç bcl bclfçm abçdfkzgsl *olá* ``Banana`` `a`
 sdkflsdklçsdkflçdskçlkdsfkfçdslkfçlwklçdskfd
 | Nome | Idade |
 | --- | --- |
@@ -26,12 +26,30 @@ sdkflsdklçsdkflçdskçlkdsfkfçdslkfçlwklçdskfd
 >Olá
 >Teste
 
----
+------
 
 ```js
 let ola = "ola"
+```
+```csharp
+```
+
+```python
+sdjfkdjzflkdjlfdjsklfd
+dfdskflçksdfklsdçksdfçs
+```
+```java
+sdjfkdjzflkdjlfdjsklfd
+dfdskflçksdfklsdçksdfçs
 ```
 
 $$
 x + 5=10
 $$
+
+[[pedro|Pedro]]
+[[pedro]]
+[pedro](pedro.com)
+![pedro](pedro.com)
+![[pedro.com|pedro]]
+![[pedro.com]]
