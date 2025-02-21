@@ -304,7 +304,7 @@ class MD {
     }
 
     putParagrafoWhereCan(line, index) {
-        if((line[0] !== OPEN_TAG_STAND && !this.identifierLines[index]) || this.identifierLines === NORMAL_TEXT) {
+        if((line[0] !== OPEN_TAG_STAND && !this.identifierLines[index]) || this.identifierLines[index] === NORMAL_TEXT) {
             this.identifierLines[index] = NORMAL_TEXT;
             return `<p>${line}</p>`
         }
