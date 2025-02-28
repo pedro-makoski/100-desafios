@@ -1,0 +1,10 @@
+{
+    "id": "post-blog",
+    "name": "Post blog",
+    "version": "1.0.0",
+    "minAppVersion": "1.0.0",
+    "description": "Este é um plugin para o Obsidian",
+    "author": "Pedro Makoski",
+    "authorUrl": "https://www.rantool.com",
+    "main": "main.js"
+}

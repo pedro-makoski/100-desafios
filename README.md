@@ -39,3 +39,4 @@ Veja aqui nessa tabela os desafios criados:
 | 33 | Post e Get Json | O objetivo é criar uma API Restful que faça POST e GET no JSON usando Go e Gin | 
 | 34 | Conversão romano test V2 | O objetivo é criar em Go, funções testes para ver se esta realmente correto. Só que agora usando teste fuzzing. |
 | 35 | Markdown em HTML | O desáfio é criar um programa que transforma arquivos markdown em HTML, usando JS. | 
+| 36 | Publicar Blog Obsidian plugin | O objetivo é criar um programa que faz upload de um novo blog post a partir do markdown do Obsidian(termine a ultima linha com um espaço vázio). |

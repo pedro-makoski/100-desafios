@@ -1,0 +1,23 @@
+{
+  "name": "desafio-035-md-em-html",
+  "version": "1.0.0",
+  "description": "mdToHTML",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "js-beautify": "^1.15.3",
+    "jsdom": "^26.0.0",
+    "obsidian": "^1.8.7",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "globals": "^16.0.0"
+  }
+}
