@@ -7,14 +7,18 @@ class Texts {
         const lines = [];
 
         let actual = [];
-        Array.from(this.text).map(caracter => {
-            if(caracter === end) {
+        let array = Array.from(this.text)
+        array.push(" ")
+        array.map((caracter, index) => {
+            if(caracter !== end) {
+                actual.push(caracter)
+            }
+
+            if(caracter === end || index === array.length-1) {
                 const text = actual.join("");
                 actual = []; 
                 lines.push(text);
             }
-
-            actual.push(caracter)
         });
 
         return {
@@ -66,6 +70,7 @@ class MD {
         this.linesMod = this.texts.listOfLines("\n");
         this.allLines = this.linesMod.removeItemsInLines(["\n", "\r"]);
         this.identifierLines = [];
+        this.identifierLinesIndicatedLists = {};
         this.posOfPartOfTableToExclude = [];
         this.openIdentControlLists = {}
         this.openIdentControlListsWithTagCloseValue = {}
@@ -76,7 +81,8 @@ class MD {
 
         if(line === EMPTY_STRING) {
             this.identifierLines[index] = WRAP_NAME;
-            this.posOfPartOfTableToExclude.push(index)
+            // this.posOfPartOfTableToExclude.push(index)
+            return `<br>`
         }
 
         return line; 
@@ -88,7 +94,7 @@ class MD {
         if(hashtags) {
             const hashtagsList = hashtags[1].split("");
             const text = hashtags[2];
-            this.identifierLines[index] = HEADER_NAEME;
+            this.identifierLines[index] = `${HEADER_NAEME}-${hashtagsList.length}`;
             return `<h${hashtagsList.length}>${text}</h${hashtagsList.length}>`;
         }
 
@@ -210,6 +216,7 @@ class MD {
         const match = line.match(pattern);
         if(match) {
             this.identifierLines[index] = id;
+            this.identifierLinesIndicatedLists[index] = id;
             const isFirst = index === 0 || !this.openIdentControlLists[match[1].length] || this.identifierLines[index-1]!==id;
             let newLine =  `${isFirst ? getOpenListTag(match[2]) : ""}${openPosElement}${match[indexOfContent]}${closePoselement}`;
             if(isFirst) {
@@ -254,13 +261,16 @@ class MD {
     doNoOrdenerdList(line, index, openListTag, closeListTag, openPosElement, closePoselement) {
         const pattern = /^(\s*)-\s([\s\S]*)/
         const patternOl = /^(\s*)\d+\.\s([\s\S]*)/
-        return this.doListsWithTab(pattern, line, index, () => `<ul>`, closeListTag, openPosElement, closePoselement, LIST_ORDER_NAME, 2, patternOl, "</ol>")
+        return this.doListsWithTab(pattern, line, index, () => `<ul>`, closeListTag, openPosElement, closePoselement, LIST_NO_ORDER_NAME, 2, patternOl, "</ol>", false)
     }
 
     doOrderedLists(line, index, openListTag, closeListTag, openPosElement, closePoselement) {
         const pattern = /^(\s*)(\d+)\.\s([\s\S]*)/
         const patternUl = /^(\s*)-\s([\s\S]*)/
-        return this.doListsWithTab(pattern, line, index, (content) => `<ol start="${content}">`, closeListTag, openPosElement, closePoselement, LIST_NO_ORDER_NAME, 3, patternUl, "</ul>")
+        return this.doListsWithTab(pattern, line, index, (content) => {
+            this.identifierLinesIndicatedLists[index] = content;
+            return `<ol start="${content}">`
+        }, closeListTag, openPosElement, closePoselement, LIST_ORDER_NAME, 3, patternUl, "</ul>", true)
     }
 
     doBlockQuote(line, index, openBlockQuoteTag, closeBlockQuoteTag) {
@@ -416,7 +426,6 @@ class MD {
     }
 
     convertTOHTML() {
-        console.log(this.allLines)
         this.allLines = this.doFuncionsAboutLine([
             (l, i) => this.emptyStringIsBr(l, i),
             (l, i) => this.putBold(l, i, "<strong>", "</strong>"),
@@ -445,7 +454,3 @@ class MD {
         return result; 
     }
 }
-
-
-
-module.exports = MD;
