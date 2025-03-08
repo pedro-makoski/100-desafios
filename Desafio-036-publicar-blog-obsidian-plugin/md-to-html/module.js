@@ -210,11 +210,13 @@ class MD {
         const match = line.match(pattern);
         if(match) {
             this.identifierLines[index] = id;
-            const isFirst = index === 0 || !this.openIdentControlLists[match[1].length] || this.identifierLines[index-1]!==id;
-            let newLine =  `${isFirst ? getOpenListTag(match[2]) : ""}${openPosElement}${match[indexOfContent]}${closePoselement}`;
+            const conditionNewIdented = !this.openIdentControlLists[match[1].length]
+            const conditionIsNext = conditionNewIdented && match[1].length !== 0 
+            const isFirst = index === 0 || conditionNewIdented || this.identifierLines[index-1]!==id;
+            let newLine =  `${conditionIsNext ? openPosElement : ""}${isFirst ? getOpenListTag(match[2]) : ""}${openPosElement}${match[indexOfContent]}${closePoselement}`;
             if(isFirst) {
                 this.openIdentControlLists[match[1].length] = true; 
-                this.openIdentControlListsWithTagCloseValue[match[1].length] = closeListTag; 
+                this.openIdentControlListsWithTagCloseValue[match[1].length] = (conditionIsNext ? closePoselement : "")+closeListTag; 
             }
             
             let nextElement = this.allLines[index+1]
@@ -416,7 +418,6 @@ class MD {
     }
 
     convertTOHTML() {
-        console.log(this.allLines)
         this.allLines = this.doFuncionsAboutLine([
             (l, i) => this.emptyStringIsBr(l, i),
             (l, i) => this.putBold(l, i, "<strong>", "</strong>"),
@@ -445,7 +446,5 @@ class MD {
         return result; 
     }
 }
-
-
 
 module.exports = MD;
