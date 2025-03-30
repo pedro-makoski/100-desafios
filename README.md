@@ -30,13 +30,13 @@ Veja aqui nessa tabela os desafios criados:
 | 24 | Procurar quantidade de certo elemento em uma linha | O objetivo é criaru um programa para Procurar quantidade de certo elemento em uma linha |
 | 25 | Procurar quantidade de vezes que mais de um elementos estão na lista | O objetivo é criar um programa para Procurar quantidade de vezes que mais de um elementos estão na lista |
 | 26 | Lucro | O objetivo é criar um programa em Go que calcule o lucro | 
-| 27 | Conversão romano | O objetivo é criar uma API Restful para conversão de números romanos. |
+| 27 | Conversão romano | O objetivo é criar uma API para conversão de números romanos. |
 | 28 | CSV em tabela | O objetivo é criar um programa que obtenha um valor em CSV, e transforme em uma tabela formatada no prompt de comando. Mas atenção: o  programa nao funciona com virgulas entre aspas e nem com acentos e cada coluna deve ter pelo menos um espaco, para que o programa funcione. | 
 | 29 | Conversão romano test | O objetivo é criar em Go, funções testes para ver se esta realmente correto. | 
 | 30 | Palíndromo verifier | O objetivo é criar um programa que peça ao usuário um valor e retorne se ele é ou não é um palíndromo | 
 | 31 | Contagem de caracteres | O objetivo é criar um programa que retorne um map com a quantidade de que cada caractere aparece em uma string | 
 | 32 | Soma de valores pares igual a um valor determinado | O objetivo é criar um programa onde a soma de valores pares igual a um valor determinado |
-| 33 | Post e Get Json | O objetivo é criar uma API Restful que faça POST e GET no JSON usando Go e Gin | 
+| 33 | Post e Get Json | O objetivo é criar uma API que faça POST e GET no JSON usando Go e Gin | 
 | 34 | Conversão romano test V2 | O objetivo é criar em Go, funções testes para ver se esta realmente correto. Só que agora usando teste fuzzing. |
 | 35 | Markdown em HTML | O desáfio é criar um programa que transforma arquivos markdown em HTML, usando JS. | 
 | 36 | Publicar Blog Obsidian plugin | O objetivo é criar um programa que faz upload de um novo blog post a partir do markdown do Obsidian(termine a ultima linha com um espaço vázio). |
