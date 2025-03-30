@@ -41,3 +41,5 @@ Veja aqui nessa tabela os desafios criados:
 | 35 | Markdown em HTML | O desáfio é criar um programa que transforma arquivos markdown em HTML, usando JS. | 
 | 36 | Publicar Blog Obsidian plugin | O objetivo é criar um programa que faz upload de um novo blog post a partir do markdown do Obsidian(termine a ultima linha com um espaço vázio). |
 | 37 | Cálculo IMC | Programa em Go que faz cálculo do IMC. |
+| 38 | Gerador de senha aleatória módulo | Módulo para a função de gerar senha aleatória. | 
+| 39 | Alguns exercícios de python para praticar - feito em sala de aula | Exercícios de cálculo de distância entre dois pontos, área do trapézio, IMC, conversão temperatura. |
