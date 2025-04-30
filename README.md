@@ -43,3 +43,4 @@ Veja aqui nessa tabela os desafios criados:
 | 37 | Cálculo IMC | Programa em Go que faz cálculo do IMC. |
 | 38 | Gerador de senha aleatória módulo | Módulo para a função de gerar senha aleatória. | 
 | 39 | Alguns exercícios de python para praticar - feito em sala de aula | Exercícios de cálculo de distância entre dois pontos, área do trapézio, IMC, conversão temperatura. |
+| 40 | Módulo de calculadora | O objetivo é criar uma classe capaz de calcular um resultado a partir de uma string |
