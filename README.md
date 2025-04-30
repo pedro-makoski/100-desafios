@@ -44,3 +44,4 @@ Veja aqui nessa tabela os desafios criados:
 | 38 | Gerador de senha aleatória módulo | Módulo para a função de gerar senha aleatória. | 
 | 39 | Alguns exercícios de python para praticar - feito em sala de aula | Exercícios de cálculo de distância entre dois pontos, área do trapézio, IMC, conversão temperatura. |
 | 40 | Módulo de calculadora | O objetivo é criar uma classe capaz de calcular um resultado a partir de uma string |
+| 41 | Módulos para criação de senhas | Crie senhas aleatoriamente usando as funções e classes. |
