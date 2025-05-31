@@ -48,3 +48,4 @@ Veja aqui nessa tabela os desafios criados:
 | 42 | Módulo capaz de manipular, em algumas questões, strings | Possui funções como ver quantidade de certo elemento, inverter, capitalizar, alternar caixa e afins |
 | 43 | Slice do alfabeto | Esse exercísio super simples, visa obter uma lista do alfabeto, a partir de um número digitado pelo usuário. |
 | 44 | Classe de matriz | Um objeto com funções sobre uma classe. |
+| 45 | MMC e MDC | Funções que calculam o MMC e o MDC em JS | 
