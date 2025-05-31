@@ -46,3 +46,4 @@ Veja aqui nessa tabela os desafios criados:
 | 40 | Módulo de calculadora | O objetivo é criar uma classe capaz de calcular um resultado a partir de uma string |
 | 41 | Módulos para criação de senhas | Crie senhas aleatoriamente usando as funções e classes. |
 | 42 | Módulo capaz de manipular, em algumas questões, strings | Possui funções como ver quantidade de certo elemento, inverter, capitalizar, alternar caixa e afins |
+| 43 | Slice do alfabeto | Esse exercísio super simples, visa obter uma lista do alfabeto, a partir de um número digitado pelo usuário. |
