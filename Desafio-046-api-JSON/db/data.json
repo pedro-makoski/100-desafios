@@ -1,0 +1,137 @@
+[
+    {
+      "id": "C001",
+      "nome": "Ana Silva",
+      "email": "ana.silva@example.com",
+      "telefone": "5511987654321",
+      "dataNascimento": "1985-03-15",
+      "endereco": {
+        "rua": "Rua das Flores",
+        "numero": "123",
+        "complemento": "Apto 101",
+        "bairro": "Jardins",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "01400-000"
+      },
+      "comprasUltimoAno": 1250.50,
+      "ativo": true,
+      "segmento": "Premium",
+      "preferencias": ["eletrônicos", "livros"]
+    },
+    {
+      "id": "C002",
+      "nome": "Bruno Costa",
+      "email": "bruno.costa@example.com",
+      "telefone": "5521912345678",
+      "dataNascimento": "1992-07-22",
+      "endereco": {
+        "rua": "Av. Principal",
+        "numero": "456",
+        "bairro": "Centro",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ",
+        "cep": "20000-000"
+      },
+      "comprasUltimoAno": 300.00,
+      "ativo": false,
+      "segmento": "Básico",
+      "preferencias": ["moda"]
+    },
+    {
+      "id": "C003",
+      "nome": "Carla Oliveira",
+      "email": "carla.ol@example.com.br",
+      "telefone": "5531998765432",
+      "dataNascimento": "1978-11-01",
+      "endereco": {
+        "rua": "Travessa da Paz",
+        "numero": "78",
+        "bairro": "Santa Efigênia",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "30100-000"
+      },
+      "comprasUltimoAno": 2500.75,
+      "ativo": true,
+      "segmento": "VIP",
+      "preferencias": ["viagens", "restaurantes"]
+    },
+    {
+      "id": "C004",
+      "nome": "Daniel Pereira",
+      "email": "daniel.p@email.com",
+      "telefone": "5561911223344",
+      "dataNascimento": "2000-01-30",
+      "endereco": {
+        "rua": "Quadra Sul",
+        "numero": "99",
+        "bairro": "Asa Sul",
+        "cidade": "Brasília",
+        "estado": "DF",
+        "cep": "70000-000"
+      },
+      "comprasUltimoAno": 50.00,
+      "ativo": true,
+      "segmento": "Básico",
+      "preferencias": ["jogos"]
+    },
+    {
+      "id": "C005",
+      "nome": "Eduarda Lima",
+      "email": "eduarda.lima@teste.com",
+      "telefone": "5581977665544",
+      "dataNascimento": "1995-05-20",
+      "endereco": {
+        "rua": "Av. Boa Viagem",
+        "numero": "1000",
+        "complemento": "Edifício Mar",
+        "bairro": "Boa Viagem",
+        "cidade": "Recife",
+        "estado": "PE",
+        "cep": "51000-000"
+      },
+      "comprasUltimoAno": 800.00,
+      "ativo": true,
+      "segmento": "Premium",
+      "preferencias": ["música", "cinema"]
+    },
+    {
+      "id": "C006",
+      "nome": "Fábio Gomes",
+      "email": "fabio.g@provedor.org",
+      "telefone": "5541933221100",
+      "dataNascimento": "1980-09-10",
+      "endereco": {
+        "rua": "Alameda dos Anjos",
+        "numero": "25",
+        "bairro": "Batel",
+        "cidade": "Curitiba",
+        "estado": "PR",
+        "cep": "80000-000"
+      },
+      "comprasUltimoAno": 1800.20,
+      "ativo": true,
+      "segmento": "Premium",
+      "preferencias": ["gastronomia", "arte"]
+    },
+    {
+      "id": "C007",
+      "nome": "Gabriela Nunes",
+      "email": "gabi.nunes@empresa.net",
+      "telefone": "5571966554433",
+      "dataNascimento": "1998-02-28",
+      "endereco": {
+        "rua": "Largo do Pelourinho",
+        "numero": "50",
+        "bairro": "Pelourinho",
+        "cidade": "Salvador",
+        "estado": "BA",
+        "cep": "40000-000"
+      },
+      "comprasUltimoAno": 150.00,
+      "ativo": false,
+      "segmento": "Básico",
+      "preferencias": ["esportes"]
+    }
+  ]
