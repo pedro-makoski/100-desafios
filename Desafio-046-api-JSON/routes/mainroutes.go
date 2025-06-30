@@ -21,6 +21,7 @@ func HandleRequests() {
 func DefineRoutes(r *mux.Router) {
 	r.HandleFunc("/clientes", controllers.ReturnAllClients)
 	r.HandleFunc("/clientes/resumo", controllers.ClientesResumo)
+	r.HandleFunc("/clientes/contato", controllers.GetClientesContatos)
 }
 
 func SetMiddlewares(r *mux.Router) {
