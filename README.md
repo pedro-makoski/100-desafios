@@ -1,5 +1,5 @@
 # 100 desafios
-Vou realizar cem exercícios em C, Go ou JS, com o objetivo de praticar. O meu comprometimento é elaborar e codificar pelo menos 3 exercícios no mês, chegando a um ponto que tenhamos 100 exercícios. 
+Vou realizar cem exercícios em C, Go ou JS, com o objetivo de praticar. 
 ## Desafios 
 Veja aqui nessa tabela os desafios criados:
 | Numero | Nome | Descrição |
