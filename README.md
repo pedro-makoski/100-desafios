@@ -49,3 +49,4 @@ Veja aqui nessa tabela os desafios criados:
 | 43 | Slice do alfabeto | Esse exercísio super simples, visa obter uma lista do alfabeto, a partir de um número digitado pelo usuário. |
 | 44 | Classe de matriz | Um objeto com funções sobre uma classe. |
 | 45 | MMC e MDC | Funções que calculam o MMC e o MDC em JS | 
+| 46 | Controle de tarefas em Java Simples | Sistema simples para controle de tarefas em Java. |
