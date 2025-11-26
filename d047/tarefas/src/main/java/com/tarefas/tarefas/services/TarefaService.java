@@ -3,6 +3,7 @@ package com.tarefas.tarefas.services;
 import com.tarefas.tarefas.exceptions.TarefaNaoEncontradaException;
 import com.tarefas.tarefas.model.Tarefa;
 import com.tarefas.tarefas.repositories.TarefaRepository;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -17,7 +18,7 @@ public class TarefaService {
         this.tarefaRepository = tarefaRepository;
     }
 
-    public Tarefa addTarefa(Tarefa tarefa) {
+    public Tarefa addTarefa(@Valid Tarefa tarefa) {
         if(tarefaRepository.existsByTitulo(tarefa.getTitulo())) {
             throw new ResponseStatusException(HttpStatus.CONFLICT, "Já existe um item com este título");
         }
@@ -34,7 +35,7 @@ public class TarefaService {
                 .orElseThrow(() -> new TarefaNaoEncontradaException("Tarefa não encontrada"));
     }
 
-    public Tarefa atualizarTarefa(Tarefa newTarefa) {
+    public Tarefa atualizarTarefa(@Valid Tarefa newTarefa) {
         Tarefa tarefa = tarefaRepository.findById(newTarefa.getId())
                 .orElseThrow(() -> new TarefaNaoEncontradaException("Tarefa não encontrada"));
 
