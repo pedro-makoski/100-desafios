@@ -52,4 +52,5 @@ Veja aqui nessa tabela os desafios criados:
 | 46 | Controle de tarefas em Java Simples | Sistema simples para controle de tarefas em Java. |
 | 47 | Validador de Parênteses e Chaves | Verifica se uma expressão matemática tem abertura e fechamento equilibrados de parênteses, colchetes e chaves usando uma pilha simples.|
 | 48 | Anagrama Verifier | Recebe duas palavras ou frases e determina se uma é anagrama da outra, ignorando espaços e maiúsculas. |
+| 49 | Cifra de César | Codifica e decodifica mensagens de texto deslocando caracteres no alfabeto por um valor chave definido pelo usuário. |
 
