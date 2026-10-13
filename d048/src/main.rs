@@ -18,10 +18,11 @@ fn main() {
 }
 
 fn are_anagrames(anagram1: String, anagrama2: String) -> bool {
-    let chars_of_anagram_1: Vec<char> = anagram1.trim().to_lowercase()
+    let chars_of_anagram_1: Vec<char> = anagram1
+        .trim().to_lowercase().replace(" ", "")
         .chars().collect();
     let mut chars_of_anagram_2: Vec<char> = anagrama2
-        .trim().to_lowercase()
+        .trim().to_lowercase().replace(" ", "")
         .chars().collect();
 
     if chars_of_anagram_1.len() != chars_of_anagram_2.len() {
