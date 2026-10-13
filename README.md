@@ -54,4 +54,4 @@ Veja aqui nessa tabela os desafios criados:
 | 48 | Anagrama Verifier | Recebe duas palavras ou frases e determina se uma é anagrama da outra, ignorando espaços e maiúsculas. |
 | 49 | Cifra de César | Codifica e decodifica mensagens de texto deslocando caracteres no alfabeto por um valor chave definido pelo usuário. |
 | 50 | Removedor de Duplicados em Vetor | Recebe um array desordenado e devolve uma nova lista contendo apenas elementos únicos, sem repetições. |
-
+| 51 | Calculadora de Troco Mínimo | Informa o valor da compra e o valor pago, retornando a menor quantidade possível de notas e moedas necessárias para o troco |
