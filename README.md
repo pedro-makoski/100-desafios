@@ -1,5 +1,5 @@
 # 100 desafios
-Vou realizar cem exercícios em C, Go ou JS, com o objetivo de praticar. 
+Vou realizar cem exercícios em C, GO,JS, TS, Java e Rust, com o objetivo de praticar. 
 ## Desafios 
 Veja aqui nessa tabela os desafios criados:
 | Numero | Nome | Descrição |
@@ -50,3 +50,4 @@ Veja aqui nessa tabela os desafios criados:
 | 44 | Classe de matriz | Um objeto com funções sobre uma classe. |
 | 45 | MMC e MDC | Funções que calculam o MMC e o MDC em JS | 
 | 46 | Controle de tarefas em Java Simples | Sistema simples para controle de tarefas em Java. |
+| 47 | Validador de Parênteses e Chaves | Verifica se uma expressão matemática tem abertura e fechamento equilibrados de parênteses, colchetes e chaves usando uma pilha simples.|
